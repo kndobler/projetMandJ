@@ -1,12 +1,25 @@
 
-@media screen and (min-width: 800px){
+
     body{
-        background-color: azure;
+        background-color: rgb(1, 33, 33);
         
         justify-content: space-around;
     }
+    header{
+        display: flex;
+        justify-content: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: x-large;
+        font-weight: bold;
+     
+    }
     h1{
-        color: rgb(46, 165, 42);
+        color: rgb(42, 9, 187);
+        margin: 0;
+        
+    }
+    .vaisseauGentil{
+        transform: rotate(-30deg);
     }
     .interface{
         display: flex;
@@ -22,34 +35,48 @@
         background-color: black;
         margin-right: 2em;
     }
+    .containerVaisseauGentil{
+        rotate: 90°;
+    }
     .ecranDesScores{
-        background-color: orchid;
+        padding: 2em;
+        font-size: large;
+        background: linear-gradient(#0046f6, #010962);
         width: 30%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        display: flex;
+        justify-content: center;
     }
     .containerVaisseauGentil{
+       background-color: transparent;
         height: 20%;
     }
     .containerMonstre{
+        background-color: transparent;
         height: 80%;
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
     .vaisseauMechant{
         width: 20%;
         height: 20%;
     }
+    .imageFondContainer{
+        width: 100%;
+    }
     
-}
-@media screen and (max-width: 600px){
 
-    body{
-        background-color: azure;
-        
-        justify-content: space-around;
+
+@media screen and (min-width :200px ) {
+    .vaisseauMechant{
+        width: 20%;
+        height:7%;
     }
-    h1{
-        color: brown;
-    }
+}
+@media screen and (min-width: 550px){
+
+   
     .interface{
         display: flex;
         padding: 10px;
@@ -74,10 +101,23 @@
     .containerMonstre{
         height: 80%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
     .vaisseauMechant{
-        width: 20%;
-        height: 20%;
+        width: 10%;
+        height: 7%;
+    }
+}
+@media screen and (min-width :1000px ) {
+    .vaisseauMechant{
+        width: 10%;
+        height:10%;
+    }
+}
+@media screen and (min-width :1550px ) {
+    .vaisseauMechant{
+        width: 9%;
+        height:10%;
     }
 }
