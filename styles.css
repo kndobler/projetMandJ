@@ -26,6 +26,24 @@
         padding: 10px;
         height: 45em;
     }
+    .container-direct{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .vie-direct{
+        color: white;
+    }
+    .vie-direct_nombre{
+        color: red;
+    }
+    .score-direct_nombre{
+        color: yellow;
+    }
+    .score-direct{
+        color: white;
+    }
     .ecranDeJeu{
         display: flex;
         flex-direction: column;
@@ -34,6 +52,9 @@
         color : white;
         background-color: black;
         margin-right: 2em;
+        border:solid 0.2em #32a1ce;
+        border-radius: 3%;
+        padding: 1em;
     }
     .containerVaisseauGentil{
         rotate: 90°;
@@ -45,7 +66,13 @@
         width: 30%;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         display: flex;
-        justify-content: center;
+        justify-content:flex-start;
+        align-items: center;
+        flex-direction: column;
+        border:thick double #32a1ce;
+    }
+    .Text-score{
+        margin: 2em;
     }
     .containerVaisseauGentil{
        background-color: transparent;
@@ -66,7 +93,36 @@
         width: 100%;
     }
     
-
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 2px solid rgb(140 140 140);
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+      }
+      
+      caption {
+        caption-side: bottom;
+        padding: 10px;
+        font-weight: bold;
+      }
+      
+      thead,
+      tfoot {
+        background-color: rgb(228 240 245);
+      }
+      
+      th,
+      td {
+        border: 1px solid rgb(160 160 160);
+        padding: 8px 10px;
+      }
+      
+      td:last-of-type {
+        text-align: center;
+      }
+      
 
 @media screen and (min-width :200px ) {
     .vaisseauMechant{
@@ -76,7 +132,12 @@
 }
 @media screen and (min-width: 550px){
 
-   
+    .container-direct{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
     .interface{
         display: flex;
         padding: 10px;
@@ -114,10 +175,12 @@
         width: 10%;
         height:10%;
     }
+    
 }
 @media screen and (min-width :1550px ) {
     .vaisseauMechant{
         width: 9%;
         height:10%;
     }
+ 
 }
